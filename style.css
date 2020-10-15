@@ -1,0 +1,166 @@
+:root[theme="Excellent"] { 
+/* AQI < 50*/
+  --circleColor: rgb(0, 124, 0);
+  --borderColor: rgb(64, 226, 211);
+}
+/* AQI 51 - 100 */
+:root[theme='Good']{
+  --circleColor: yellow;
+  --borderColor: yellow;
+}
+/* AQI 101 - 150 */
+:root[theme='LightlyPolluted']{
+  --circleColor: orange;
+  --borderColor: orange;
+}
+/* AQI 151 - 200 */
+:root[theme='ModeratelyPolluted']{
+  --circleColor: rgb(255, 102, 102);
+  --borderColor: rgb(255, 102, 102);;
+}
+/* AQI 201 - 300 */
+:root[theme='HeavilyPolluted']{
+  --circleColor: purple;
+  --borderColor: purple;
+}
+/* AQI > 300 */
+:root[theme='SeverelyPolluted']{
+  --circleColor: brown;
+  --borderColor: brown;;
+}
+strong {
+  font-weight: bolder;
+}
+
+p {
+  margin: 0.2em 0;
+  /* font-size: 14px; */
+}
+
+pre {
+  white-space:pre-wrap;
+  font-size: 14px;
+  line-height: 1.3em;
+}
+
+figcaption {
+  display: none;
+}
+nav {
+  height: 6vh;
+  background-color: rgb(181,100,195);
+  font-size: 28px;
+  font-weight: bolder;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  height: 80vh;
+  display: flex;
+}
+
+.left {
+  width: 60%;
+}
+
+.left > div:not(:first-child) {
+  border: 1px solid var(--borderColor);
+  border-radius: 5px;
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 2vh;
+  padding: 5px;
+}
+
+.left > div:not(:first-child) h1 {
+  font-size: 18px;
+  margin-bottom: 0.2em;
+}
+
+.nowData {
+  height: 20%;
+  margin-right: 10%;
+  margin-left: 5%;
+  display: flex;
+  align-items: center;
+}
+
+.nowData .content {
+  width: 90%;
+  text-align:center;
+  padding: 0 10px;
+}
+
+.tempData {
+  display: none;
+}
+.content p {
+  font-size: 18px;
+}
+
+.content .updateTime {
+  font-size: 12px;
+}
+
+.normalGroup {
+  height: 30%;
+}
+
+.specialGroup {
+  height: 40%;
+}
+
+.circle {
+  width: 2.5em;
+  height: 2.5em;
+  background-color: var(--circleColor);
+  border: solid 1px rgb(65, 113, 156);
+  border-radius: 5000px;
+}
+
+.right {
+  width: 40%;
+  background-color: rgb(46, 208, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right figure {
+  width: 100%;
+  overflow: hidden;
+  margin: 0;
+}
+
+.right img {
+  height: 80vh;
+  /* max-width: 100%; */
+  width: 100%;
+  /* vertical-align : middle; */
+
+}
+.carousel-item.googleMap {
+  height: 80vh;
+  width: 40vw;
+}
+
+.carousel-item iframe {
+  height: 100%;
+  width: 100%;
+  /* border: 2px solid red; */
+  box-sizing: border-box;
+  /* margin: auto auto; */
+}
+
+footer {
+  height: 14vh;
+  font-size: 24px;
+  background-color: rgb(252, 189, 138);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: gray;
+}

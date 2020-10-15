@@ -1,0 +1,16 @@
+{
+  "name": "pm-2point5-sensor",
+  "version": "1.0.0",
+  "description": "- 左側上方資料 10 s 輪一次(pm 2.5 和 溫度&濕度))\r - 更新時間如果沒有在 2 min 內顯示 `氣象局離線`\r - 右側圖片 10 s 換 // todo map",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-webp": "^4.0.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
